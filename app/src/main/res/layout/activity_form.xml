@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <TextView
+        android:id="@+id/frm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/frm_title"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_frm_PropName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/prop_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frm_title"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_frm_PropAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/prop_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_PropName"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_frm_PropType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/prop_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_PropAdd" />
+
+    <TextView
+        android:id="@+id/tv_frm_Bedroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/prop_bedroom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_PropType" />
+
+    <TextView
+        android:id="@+id/tv_frm_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_Bedroom" />
+
+    <TextView
+        android:id="@+id/tv_frm_PropRentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/prop_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_Date" />
+
+    <TextView
+        android:id="@+id/tv_frm_Reporter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/prop_reporter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_FurType" />
+
+    <TextView
+        android:id="@+id/tv_frm_FurType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/fur_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_PropRentPrice" />
+
+    <TextView
+        android:id="@+id/tv_frm_PropNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/prop_note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_Reporter" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:isScrollContainer="true"
+        android:text="@string/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_error"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txt_PropName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@id/tv_frm_PropName"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_PropName"
+        app:layout_constraintStart_toEndOf="@+id/tv_frm_PropName"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_PropName"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txt_PropAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:labelFor="@id/tv_frm_PropAdd"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_PropAdd"
+        app:layout_constraintEnd_toEndOf="@+id/txt_PropName"
+        app:layout_constraintStart_toStartOf="@+id/txt_PropName"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_PropAdd"
+        app:layout_constraintVertical_bias="0.461"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txt_Reporter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@id/tv_frm_Reporter"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_Reporter"
+        app:layout_constraintEnd_toEndOf="@+id/txt_FurType"
+        app:layout_constraintStart_toStartOf="@+id/txt_FurType"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_Reporter" />
+
+    <EditText
+        android:id="@+id/txt_PropNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@id/tv_frm_PropNote"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_PropNote"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Reporter"
+        app:layout_constraintStart_toStartOf="@+id/txt_Reporter"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_PropNote" />
+
+    <Spinner
+        android:id="@+id/txt_PropType"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/tv_frm_PropType"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_PropType"
+        app:layout_constraintEnd_toEndOf="@+id/txt_PropAddress"
+        app:layout_constraintStart_toStartOf="@+id/txt_PropAddress"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_PropType" />
+
+    <Spinner
+        android:id="@+id/txt_Bedroom"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="wrap_content"
+        android:labelFor="@id/tv_frm_Bedroom"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_Bedroom"
+        app:layout_constraintEnd_toEndOf="@+id/txt_PropType"
+        app:layout_constraintStart_toStartOf="@+id/txt_PropType"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_Bedroom" />
+
+    <Spinner
+        android:id="@+id/txt_FurType"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="wrap_content"
+        android:labelFor="@id/tv_frm_FurType"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_FurType"
+        app:layout_constraintEnd_toEndOf="@+id/txt_RentPrice"
+        app:layout_constraintStart_toStartOf="@+id/txt_RentPrice"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_FurType" />
+
+    <EditText
+        android:id="@+id/txt_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:labelFor="@id/tv_frm_Date"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_Date"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Bedroom"
+        app:layout_constraintStart_toStartOf="@+id/txt_Bedroom"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_Date" />
+
+    <EditText
+        android:id="@+id/txt_RentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:labelFor="@id/tv_frm_PropRentPrice"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_frm_PropRentPrice"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Date"
+        app:layout_constraintStart_toStartOf="@+id/txt_Date"
+        app:layout_constraintTop_toTopOf="@+id/tv_frm_PropRentPrice" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frm_PropNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

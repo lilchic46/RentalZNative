@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NativeRentalZ</string>
+    <string name="btn_go">Go to Form</string>
+    <string name="frm_title">Create new property</string>
+    <string name="prop_name">Property Name</string>
+    <string name="prop_add">Property Address</string>
+    <string name="prop_type">Property Type</string>
+    <string name="prop_bedroom">Bedrooms</string>
+    <string name="date">Date</string>
+    <string name="prop_price">Monthly Rent Price</string>
+    <string name="fur_type">Furniture Type</string>
+    <string name="prop_reporter">Reporter Name</string>
+    <string name="prop_note">Note</string>
+    <string name="btn_submit">Submit</string>
+    <string name="confirm_title">Confirm new property</string>
+    <string name="btn_confirm">Confirm</string>
+
+</resources>
