@@ -22,17 +22,17 @@ public class FormActivity extends AppCompatActivity {
         setContentView(R.layout.activity_form);
 
         Spinner spinPropType = findViewById(R.id.txt_PropType);
-        String[] itemsPropType = new String[]{"Flat", "House", "Bungalow"};
+        String[] itemsPropType = new String[]{"Select Property Type","Flat", "House", "Bungalow"};
         ArrayAdapter<String> adapterPropType = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, itemsPropType);
         spinPropType.setAdapter(adapterPropType);
 
         Spinner spinBedrooms = findViewById(R.id.txt_Bedroom);
-        String[] itemsBedrooms = new String[]{"Studio", "One", "Two", "etc."};
+        String[] itemsBedrooms = new String[]{"Select Bedrooms", "Studio", "One", "Two", "etc."};
         ArrayAdapter<String> adapterBedrooms = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, itemsBedrooms);
         spinBedrooms.setAdapter(adapterBedrooms);
 
         Spinner spinFurType = findViewById(R.id.txt_FurType);
-        String[] itemsFurType = new String[]{"Furnished", "Unfurnished", "Part Furnished"};
+        String[] itemsFurType = new String[]{"Select Furniture Type", "Furnished", "Unfurnished", "Part Furnished"};
         ArrayAdapter<String> adapterFurType = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, itemsFurType);
         spinFurType.setAdapter(adapterFurType);
 
@@ -88,12 +88,12 @@ public class FormActivity extends AppCompatActivity {
                 isValid = false;
             }
 
-            if (TextUtils.isEmpty(PropType)) {
+            if (PropType == "Select Property Type") {
                 error += "* Property Type cannot be blank. \n";
                 isValid = false;
             }
 
-            if (TextUtils.isEmpty(Bedroom)) {
+            if (Bedroom == "Select Bedrooms") {
                 error += "* Bedrooms cannot be blank. \n";
                 isValid = false;
             }
